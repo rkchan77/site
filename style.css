@@ -6,4 +6,9 @@ body {
 
 .title {
   text-align: center;
+  background: -webkit-linear-gradient(#0377fc, #0d233d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+
