@@ -31,6 +31,7 @@ h2 {
   background-image: linear-gradient(to right, #0377fc, #0d233d);
   display: inline-block;
   border-radius: 25px;
+  border: none;
 }
 
 .contact:hover {
