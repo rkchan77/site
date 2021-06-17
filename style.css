@@ -6,9 +6,34 @@ body {
 
 .title {
   text-align: center;
-  background: -webkit-linear-gradient(#0377fc, #0d233d);
+  background: linear-gradient(to right, #0377fc, #0d233d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+h1 {
+  font-size: 3em;
+}
 
+h2 {
+  font-size: 2.5em;
+}
+
+.contact {
+  margin: 10px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 1em;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #0377fc, #0d233d);
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.contact:hover {
+  top: -10px;
+}
+  
