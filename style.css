@@ -33,7 +33,7 @@ p {
   width: 200px;
   transition: top ease 0.5s;
   border-radius: 10px;
-  background-image: linear-gradient(to right, #0377fc, #0d233d);
+  background-image: radial-gradient(#0377fc, #0d233d);
   display: inline-block;
   border-radius: 25px;
   border: none;
