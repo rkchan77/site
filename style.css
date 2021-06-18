@@ -67,6 +67,8 @@ p {
   border-radius: 15px;
   top: 0;
   cursor: pointer;
+  border: 1px;
+  border-color: #000;
 }
 
 .card:hover {
