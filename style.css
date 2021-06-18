@@ -36,6 +36,7 @@ h2 {
 }
 
 .contact:hover {
-  top: -10px;
+  top: -5px;
+  background-position: right center;
 }
   
