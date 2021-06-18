@@ -54,12 +54,15 @@ p {
 .container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
   background: #ffffff;
+  min-width: 200px;
   max-width: 300px;
-  max-height: 300px;
+  min-height: 300px;
+  max-height: 400px;
   margin: 20px;
   border-radius: 15px;
   top: 0;
