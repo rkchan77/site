@@ -26,7 +26,7 @@ h2 {
   font-size: 20px;
   position: relative;
   top: 0;
-  width: 175px;
+  width: 200px;
   transition: top ease 0.5s;
   border-radius: 10px;
   background-image: linear-gradient(to right, #0377fc, #0d233d);
