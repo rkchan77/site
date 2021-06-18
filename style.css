@@ -65,10 +65,10 @@ p {
   max-height: 400px;
   margin: 20px;
   border-radius: 15px;
-  top: 0;
+  top: 0px;
   cursor: pointer;
-  border: 1px;
-  border-color: #000;
+  border: solid #000;
+  border-width: 0 0.5px;
 }
 
 .card:hover {
