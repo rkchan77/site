@@ -19,8 +19,13 @@ h2 {
   font-size: 42px;
 }
 
+h6 {
+  font-size: 24px;
+}
+
 p {
   font-size: 20px;
+  color: #878787;
   padding-left: clamp(20px, 5%, 50px);
   padding-right: clamp(20px, 5%, 50px);
   text-align: justify;
