@@ -68,12 +68,11 @@ p {
   top: 0px;
   cursor: pointer;
   border: solid #000;
-  border-width: 0 0.5px;
+  border-width: 0.5px;
 }
 
 .card:hover {
   top: -5px;
-  box-shadow: 0px 0px 20px 1px rgb(151, 151, 151);
 }
 
   
