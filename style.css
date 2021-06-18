@@ -67,7 +67,7 @@ p {
   transition: top ease 0.5s;
   display: inline-block;
   cursor: pointer;
-  border: solid #000;
+  border: solid #c4c4c4;
   border-width: 0.5px;
 }
 
