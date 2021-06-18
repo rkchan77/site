@@ -64,7 +64,7 @@ p {
   max-height: 400px;
   margin: 20px;
   border-radius: 15px;
-  top: 0px;
+  top: 0;
   cursor: pointer;
   border: solid #000;
   border-width: 0.5px;
