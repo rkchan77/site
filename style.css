@@ -21,8 +21,8 @@ h2 {
 
 p {
   font-size: 20px;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: clamp(20px, 5%, 50px);
+  padding-right: clamp(20px, 5%, 50px);
   text-align: justify;
   text-justify: inter-word;
 }
