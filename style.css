@@ -63,6 +63,9 @@ p {
   margin: 20px;
   border-radius: 15px;
   top: 0;
+  position: relative;
+  transition: top ease 0.5s;
+  display: inline-block;
   cursor: pointer;
   border: solid #000;
   border-width: 0.5px;
