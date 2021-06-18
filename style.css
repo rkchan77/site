@@ -23,6 +23,8 @@ p {
   font-size: 20px;
   padding-left: 200px;
   padding-right: 200px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .contact {
