@@ -75,6 +75,26 @@ p {
   top: -5px;
 }
 
+.github {
+  margin: 5px;
+  padding: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  position: relative;
+  top: 0;
+  width: 200px;
+  transition: top ease 0.5s;
+  background-image: linear-gradient(to right, #0377fc, #0d233d);
+  display: inline-block;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.github:hover {
+  top: -5px;
+  background-position: right center;
+}
   
     
   
