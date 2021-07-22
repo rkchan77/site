@@ -6,38 +6,44 @@
     <link rel="shortcut icon" type="image/png" href="../site/assets/favicon.png"/>
     <title>Ryan Chan</title>
     <link rel="stylesheet" href="style.css">
-    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
   </head>
   <body>
-    <center><img type="image/png" src="../site/assets/favicon.png" style="max-width: 250px;"></center>
     
-    <h1 class="title" style="margin-top: -2px; margin-bottom: -40px;">Hey! I'm Ryan Chan</h1>
-    <center><h6 style="margin-bottom: 20px;">I'm a 17 y/o entrepreneur, developer, and musician from Toronto CA📍</h6></center>
-    
-    <center><button class="contact">Contact Me</button></center>
-    
-    <h2 class="title">About Me</h2>
-    <center><p>I'm currently a student enrolled at Upper Canada College. Outside of school, I love creating and innovating new things in a variety of different topics. I enjoy coding programs, building startup companies, designing prototypes/models, composing guitar fingerstyle covers, and creating repetoire for busking.</p></center>  
-    
+    <canvas id="bgCanvas"></canvas>
+    <nav id="navbar">
+        <ul>
+          <a href="index.html" class="logo">
+            <img src="./assets/favicon.png" style="width: 60px; height: 60px; margin-top: 10px;">
+          </a>
+          <a href="index.html" class="logo"><h6 id="item" style="color:#fff; margin-top: 24px; margin-left: 10px;">Ryan Chan</h6></a>
+          <button class="contactme" style="float: right; margin-right: 50px; margin-top: 15px" onclick=contactme()>Contact me &nbsp;<i class='fas fa-paper-plane'></i></button>
+          <li><a href="music.html"><p style="color: #fff;">Music</p></a></li>
+          <li><a href="projects.html"><p style="color: #fff;">Projects</p></a></li>
+          <li><a href="index.html"><p style="color: #fff;">Home</p></a></li>
+        </ul>
+    </nav>
       
       
-    <h2 class="title">Featured</h2>
+  
+    <section class="container"> 
+            <div class="card">
+                <h1>Hey! I'm Ryan Chan 👋</h1>
+                <h6 style="margin-top: -10px;">I'm a 17 y/o entrepreneur, developer, and musician from Toronto CA📍</h6>
+                <p style="margin-top: -40px; margin-bottom: 30px;">
+                    I love creating and innovating new things from building startups to coding programs to designing prototypes and models. Asides from that, I enjoy all sorts of music whether that be playing violin, creating guitar covers, or listening to the newest pop albums.</p>
+                <center><button class="button" onclick=github()>Github &nbsp;<i class='fab fa-github'></i></button>
+                <button class="button" onclick=linkedin()> Linkedin &nbsp;<i class='fab fa-linkedin'></i></button>
+                </center>
+            </div>
 
-    <section class="container">
-      <a href="https://github.com/rkchan77/ETH-transaction-tracker" target="_blank">
-      <div class="card">
-        <h6 style="color: black; font-weight: bold; padding: 15px">Ethereum Transaction Tracker</h6>
-        <p style="padding: 15px;">Website Application that tracks recent transactions on the Ethereum Blockchain</p>
-        <p style="padding: 15px; font-weight: bold;"><i class="fas fa-code"></i> React, Solidity, Javacript</p>
-      </div>
-      </a>
-      <div class="card">
-        <h3 class="title">Test Card #3</h3>
-        <p>This is a test card</p>
-      </div>
+           <img src="drawing.png" style="border-radius: 15px; float: right; z-index: 50; margin: 50px; width: 30%; height: auto; ">
+            
+    
     </section>
     
-    <center><button class="github">More on <i class='fab fa-github'></i>Github</button></center>
       
+    <script src="script.js"></script>
   </body>
 </html>
