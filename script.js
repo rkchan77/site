@@ -15,8 +15,7 @@
   (height < 400) ? height = 400 : height;
 
   background.width = width;
-  background.height = height;
-  console.log(height)  
+  background.height = height;  
 
   function Terrain(options) {
       options = options || {};
@@ -173,6 +172,28 @@
   }
   animate();
 
+
+  function submit() {
+      const name = document.getElementById('name').value
+      const email = document.getElementById('email').value
+      const subject = document.getElementById('subject').value
+      const message = document.getElementById('message').value
+      
+      if(document.getElementById("name").value.length == 0) {
+        alert("Name is not filled out");
+      } else if(document.getElementById("email").value.length == 0) {
+        alert("Email is not filled out")
+      } else if(document.getElementById("subject").value.length == 0) {
+        alert("Subject is not filled out")
+      } else if(document.getElementById("message").value.length == 0) {
+        alert("Message is not filled out")
+      } else {
+              window.open('mailto:rkchan06@icloud.com?subject=' + subject + '&body=From: ' + name + '%0D%0AEmail: ' + email + '%0D%0A_______________________%0D%0A%0D%0A' + message,
+            '_blank'
+          );
+      }
+      
+  }
 
   function linkedin() {
       window.open(
