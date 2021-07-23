@@ -28,41 +28,19 @@
     <section class="container1"> 
         <div class="card1">
             <center><h1>Contact Me</h1></center>
-            <form action="/contact" id="contact-form" method="post" role="form">
-                <fieldset>
-                    <label for="name">Name</label>
-                        <input 
-                          id="name" 
-                          name="name" 
-                          type="text" 
-                          placeholder="Your name" 
-                          required>
-
-                    <label for="email">Email</label>
-                        <input 
-                          id="email" 
-                          name="email" 
-                          type="text" 
-                          placeholder="Your email" 
-                          required>
-
-                    <label for="message">Message</label>
-                        <textarea 
-                          id="message" 
-                          name="message" 
-                          placeholder="Enter your message here" 
-                          rows="3" 
-                          required>
-                        </textarea>
-
-                    <button type="submit">Submit</button>
-                </fieldset>
-            </form>
+            <center><div class="form-container">
+                <form class="contact-form">
+                    <input type="text" id="name" class="form" placeholder="Full name"><br>
+                    <input type="email" id="email" class="form" placeholder="Email"><br>
+                    <input type="test" id="subject" class="form" placeholder="Subject"><br>
+                    <textarea id="message" class="form" placeholder="Message" cols="30" rows="10"></textarea><br>
+                </form>
+                <button class="button" onclick=submit()>Submit</button>
+            </div></center>
         </div>
     </section>
     
       
     <script src="script.js"></script>
-    <script src="server.js"></script>
   </body>
 </html>
