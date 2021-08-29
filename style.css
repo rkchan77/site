@@ -370,8 +370,8 @@ p {
   border: solid #c4c4c4;
   border-width: 0.5px;
   z-index: 5;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 20px;
 }
 
