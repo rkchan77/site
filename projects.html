@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png"/>
+    <title>Ryan Chan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+  </head>
+  <body>
+   
+   <div id="preload"><center><div class="loadingio-spinner-dual-ball-pnr5fad44y" style="margin-top:20%;"><div class="ldio-83gvcj70z93"><div></div><div></div><div></div></div></div><p style="margin-top: 3%; font-size: 18px; color: white; opacity: 0.6;">In my spare time, I like to build random things. Here's a collection of my best projects.</p></center></div>
+    
+    <canvas id="bgCanvas"></canvas>
+    <nav id="navbar">
+        <ul>
+          <a href="index.html" class="logo">
+            <img src="./assets/logo.png" style="width: 100px; height: 50px; margin-top: 16px;">
+          </a>
+          <a href="index.html" class="logo"><h6 id="item" style="color:#fff; margin-top: 24px; margin-left: 10px;">Ryan Chan</h6></a>
+          <li class="home"><a href="index.html">Home</a></li>
+          <li class="work"><a href="projects.html">Projects</a></li>
+          <li class="music"><a href="music.html">Music</a></li>
+          <button class="contactme" style="float: right; right: 5%; margin-top: 15px" onclick=contactme()>Contact me &nbsp;<i class='fas fa-paper-plane'></i></button>
+        </ul>
+    </nav>
+     
+    <nav id="navbar1">
+        <ul>
+          <a href="index.html" class="logo">
+            <img src="./assets/logo.png" style="width: 100px; height: 50px; margin-top: 16px;">
+          </a>
+          <a href="index.html" class="logo"><h6 id="item" style="color:#fff; margin-top: 24px; margin-left: 10px;">Ryan Chan</h6></a>
+     
+              <input type="checkbox" id="active" >
+              <label for="active" class="menu-btn" style="top:1.25%;"><i class="fas fa-bars"></i></label>
+          <div class="wrapper" style="top:-0.8% ">
+             <ul>
+                  <li class="list"><a href="index.html">Home</a></li>
+                  <li class="list"><a href="projects.html">Projects</a></li>
+                  <li class="list"><a href="music.html" style="padding-bottom: 20px;">Music</a></li>
+                  <button class="button0" onclick=contactme()>Contact me &nbsp;<i class='fas fa-paper-plane'></i></button>
+             </ul>
+          </div>
+        </ul>
+    </nav>
+      
+    <section class="container1">
+            <div class="card1">
+                <center><h1>Featured Projects 📝</h1></center>
+                   
+                <!-- Large Level -->
+                   
+                <div class="large">
+                    <div class="row1">
+                       <div class="projects-parent">
+                           <div class="titlecard"></div>
+                               <div class="projects" onclick=simul()>
+                                    <div class="projects-image" style="background: url('./assets/simul.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                    <div class="projects-text">
+                                        <span class="date">In development</span>
+                                        <h2>Simul</h2>
+                                        <p>Making communities safer by enabling signals of distress to be sent from your smartphone to family</p>
+                                    </div>
+                                    <div class="projects-code">
+                                        <button class="ios">iOS App</button>
+                                        <button class="swift">Swift</button>
+                                    </div>
+                                </div>
+                                <div class="projects" onclick=neighbournet()>
+                                    <div class="projects-image" style="background: url('./assets/neighbournet.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                    <div class="projects-text">
+                                        <span class="date">Sep 2020 - Jun 2021</span>
+                                        <h2>NeighbourNet</h2>
+                                        <p>Multi-vendor ecommerce platform for local businesses to sell and promote their products</p>
+                                    </div>
+                                    <div class="projects-code">
+                                        <button class="html">HTML</button>
+                                        <button class="css">CSS</button>
+                                        <button class="js">JS</button>
+                                        <button class="liquid">Liquid</button>
+                                    </div>
+                                </div>
+                                <div class="projects" style="margin-right: auto;" onclick=internx()>
+                                    <div class="projects-image" style="background: url('./assets/internx.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                    <div class="projects-text">
+                                        <span class="date">Jul 2020 - Sep 2020</span>
+                                        <h2>InternX</h2>
+                                        <p>Web based platform that connects students to internships and positions at employers</p>
+                                    </div>
+                                    <div class="projects-code">
+                                        <button class="html">HTML</button>
+                                        <button class="css">CSS</button>
+                                        <button class="js">JS</button>
+                                        <button class="php">PHP</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+ 
+                <div class="row1">
+                    <div class="projects-parent">
+                        <div class="titlecard1"></div>
+                           <div class="projects" onclick=waterconnect()>
+                                <div class="projects-image" style="background: url('./assets/waterconnect.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">Jul 2021</span>
+                                    <h2>WaterConnect</h2>
+                                    <p>SHAD Design Challenge info page: water tracking device prototype + app proposal</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="html">HTML</button>
+                                    <button class="html">CSS</button>
+                                </div>
+                            </div>
+                            <div class="projects" onclick=uccstem()>
+                                <div class="projects-image" style="background: url('./assets/uccstem.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">Feb 2021</span>
+                                    <h2>UCC STEM</h2>
+                                    <p>Upper Canada College's official STEM website with blogs, resources, and opportunities</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="html">HTML</button>
+                                    <button class="css">CSS</button>
+                                    <button class="js">JS</button>
+                                </div>
+                            </div>
+                            <div class="projects" style="margin-right: auto;" onclick=tutoringtown()>
+                                <div class="projects-image" style="background: url('./assets/tutoringtown.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">Mar 2020</span>
+                                    <h2>Tutoring Town</h2>
+                                    <p>Matching tutors and tutees through personalized metrics + messaging system (disabled)</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="firebase">Firebase</button>
+                                    <button class="js">JS</button>
+                                    <button class="css">CSS</button>
+                                    <button class="html">HTML</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+                <div class="row1">
+                    <div class="projects-parent">
+                        <div class="titlecard2"></div>
+                           <div class="projects" onclick=tradingbot()>
+                                <div class="projects-image" style="background: url('./assets/tradingbot.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">Jul 2021</span>
+                                    <h2>Crypto Trading Bot</h2>
+                                    <p>Node.js application that detects arbitrage on different crypto exchanges and automates trades</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="node">Node.js</button>
+                                    <button class="web3">Web3</button>
+                                    <button class="solidity">Solidity</button>
+                                </div>
+                           </div>
+                           <div class="projects" onclick=ethtracker()>
+                                <div class="projects-image" style="background: url('./assets/ethtracker.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">Jun 2021</span>
+                                    <h2>ETH Transaction</h2>
+                                    <p>Track recent transactions on Ethereum blockchain (number, hash, miner block, timestamp)</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="react">React</button>
+                                    <button class="node">Node.js</button>
+                                    <button class="web3">Web3</button>
+                                    <button class="solidity">Solidity</button>
+                                </div>
+                            </div>
+                            <div class="projects" style="margin-right: auto;" onclick=cryptotrack()>
+                                <div class="projects-image" style="background: url('./assets/pricetracker.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">Jun 2021</span>
+                                    <h2>CryptoTrack</h2>
+                                    <p>View prices of popular cryptocurrencies using coinpaprika API</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="react">React</button>
+                                    <button class="node">Node.js</button>
+                                    <button class="web3">Web3</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+                <div class="row1">
+                    <div class="projects-parent">
+                        <div class="titlecard3"></div>
+                          <div class="projects" onclick=shyppio()>
+                                <div class="projects-image" style="background: url('./assets/nopic.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">In development</span>
+                                    <h2>Shyppio</h2>
+                                    <p>Chrome extension that tracks all shipments and parcels from one central place</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="chromeext">Chrome Ext</button>
+                                    <button class="js">JS</button>
+                                </div>
+                           </div>
+                           <div class="projects" onclick=kyckd()>
+                                <div class="projects-image" style="background: url('./assets/kyckd.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">Aug 2021</span>
+                                    <h2>KYCKd App</h2>
+                                    <p>Teen networking app that promotes startups, recruits other teens, and finds opportunities</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="ios">iOS App</button>
+                                    <button class="swift">Swift</button>
+                                </div>
+                            </div>
+                            <div class="projects" style="margin-right: auto;" onclick=socialblockr()>
+                                <div class="projects-image" style="background: url('./assets/socialblockr.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">Jun 2021</span>
+                                    <h2>Social Blockr</h2>
+                                    <p>Chrome extension that blocks all social media websites to eliminate distractions</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="chromeext">Chrome Ext</button>
+                                    <button class="js">JS</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>  
+               
+            <!-- Medium Level -->
+               
+            <div class="medium">
+                <h3>Startups</h3>
+                    <div class="row1">
+                       <div class="projects-parent">
+                               <div class="projects" style="margin-left: auto" onclick=simul()>
+                                    <div class="projects-image" style="background: url('./assets/simul.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                    <div class="projects-text">
+                                        <span class="date">In development</span>
+                                        <h2>Simul</h2>
+                                        <p>Making communities safer by enabling signals of distress to be sent from your smartphone to family</p>
+                                    </div>
+                                    <div class="projects-code">
+                                        <button class="ios">iOS App</button>
+                                        <button class="swift">Swift</button>
+                                    </div>
+                                </div>
+                                <div class="projects" onclick=neighbournet()>
+                                    <div class="projects-image" style="background: url('./assets/neighbournet.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                    <div class="projects-text">
+                                        <span class="date">Sep 2020 - Jun 2021</span>
+                                        <h2>NeighbourNet</h2>
+                                        <p>Multi-vendor ecommerce platform for local businesses to sell and promote their products</p>
+                                    </div>
+                                    <div class="projects-code">
+                                        <button class="html">HTML</button>
+                                        <button class="css">CSS</button>
+                                        <button class="js">JS</button>
+                                        <button class="liquid">Liquid</button>
+                                    </div>
+                                </div>
+                                <div class="projects" style="margin-right: auto;" onclick=internx()>
+                                    <div class="projects-image" style="background: url('./assets/internx.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                    <div class="projects-text">
+                                        <span class="date">Jul 2020 - Sep 2020</span>
+                                        <h2>InternX</h2>
+                                        <p>Web based platform that connects students to internships and positions at employers</p>
+                                    </div>
+                                    <div class="projects-code">
+                                        <button class="html">HTML</button>
+                                        <button class="css">CSS</button>
+                                        <button class="js">JS</button>
+                                        <button class="php">PHP</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                <h3>Web Development</h3>
+ 
+                <div class="row1">
+                    <div class="projects-parent">
+                           <div class="projects" style="margin-left: auto" onclick=waterconnect()>
+                                <div class="projects-image" style="background: url('./assets/waterconnect.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">Jul 2021</span>
+                                    <h2>WaterConnect</h2>
+                                    <p>SHAD Design Challenge info page: water tracking device prototype + app proposal</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="html">HTML</button>
+                                    <button class="html">CSS</button>
+                                </div>
+                            </div>
+                            <div class="projects" onclick=uccstem()>
+                                <div class="projects-image" style="background: url('./assets/uccstem.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">Feb 2021</span>
+                                    <h2>UCC STEM</h2>
+                                    <p>Upper Canada College's official STEM website with blogs, resources, and opportunities</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="html">HTML</button>
+                                    <button class="css">CSS</button>
+                                    <button class="js">JS</button>
+                                </div>
+                            </div>
+                            <div class="projects" style="margin-right: auto;" onclick=tutoringtown()>
+                                <div class="projects-image" style="background: url('./assets/tutoringtown.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">Mar 2020</span>
+                                    <h2>Tutoring Town</h2>
+                                    <p>Matching tutors and tutees through personalized metrics + messaging system (disabled)</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="firebase">Firebase</button>
+                                    <button class="js">JS</button>
+                                    <button class="css">CSS</button>
+                                    <button class="html">HTML</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+                <h3>Blockchain</h3>
+                
+                <div class="row1">
+                    <div class="projects-parent">
+                           <div class="projects" style="margin-left: auto" onclick=tradingbot()>
+                                <div class="projects-image" style="background: url('./assets/tradingbot.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">Jul 2021</span>
+                                    <h2>Crypto Trading Bot</h2>
+                                    <p>Node.js application that detects arbitrage on different crypto exchanges and automates trades</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="node">Node.js</button>
+                                    <button class="web3">Web3</button>
+                                    <button class="solidity">Solidity</button>
+                                </div>
+                           </div>
+                           <div class="projects" onclick=ethtracker()>
+                                <div class="projects-image" style="background: url('./assets/ethtracker.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">Jun 2021</span>
+                                    <h2>ETH Transaction</h2>
+                                    <p>Track recent transactions on Ethereum blockchain (number, hash, miner block, timestamp)</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="react">React</button>
+                                    <button class="node">Node.js</button>
+                                    <button class="web3">Web3</button>
+                                    <button class="solidity">Solidity</button>
+                                </div>
+                            </div>
+                            <div class="projects" style="margin-right: auto;" onclick=cryptotrack()>
+                                <div class="projects-image" style="background: url('./assets/pricetracker.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">Jun 2021</span>
+                                    <h2>CryptoTrack</h2>
+                                    <p>View prices of popular cryptocurrencies using coinpaprika API</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="react">React</button>
+                                    <button class="node">Node.js</button>
+                                    <button class="web3">Web3</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+                <h3>Application</h3>
+                
+                <div class="row1">
+                    <div class="projects-parent">
+                          <div class="projects" style="margin-left: auto" onclick=shyppio()>
+                                <div class="projects-image" style="background: url('./assets/nopic.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">In development</span>
+                                    <h2>Shyppio</h2>
+                                    <p>Chrome extension that tracks all shipments and parcels from one central place</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="chromeext">Chrome Ext</button>
+                                    <button class="js">JS</button>
+                                </div>
+                           </div>
+                           <div class="projects" onclick=kyckd()>
+                                <div class="projects-image" style="background: url('./assets/kyckd.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">Aug 2021</span>
+                                    <h2>KYCKd App</h2>
+                                    <p>Teen networking app that promotes startups, recruits other teens, and finds opportunities</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="ios">iOS App</button>
+                                    <button class="swift">Swift</button>
+                                </div>
+                            </div>
+                            <div class="projects" style="margin-right: auto;" onclick=socialblockr()>
+                                <div class="projects-image" style="background: url('./assets/socialblockr.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects-text">
+                                    <span class="date">Jun 2021</span>
+                                    <h2>Social Blockr</h2>
+                                    <p>Chrome extension that blocks all social media websites to eliminate distractions</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="chromeext">Chrome Ext</button>
+                                    <button class="js">JS</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div> 
+               
+            <!-- Small Level -->
+               
+            <div class="small">
+                <h3>Startups</h3>
+                        <div class="projects1-parent">
+                               <div class="projects1" onclick=simul()>
+                                    <div class="projects1-image" style="background: url('./assets/simul.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                    <div class="projects1-text">
+                                        <span class="date">In development</span>
+                                        <h2>Simul</h2>
+                                        <p>Making communities safer by enabling signals of distress to be sent from your smartphone to family</p>
+                                    </div>
+                                    <div class="projects1-code">
+                                        <button class="ios">iOS App</button>
+                                        <button class="swift">Swift</button>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="projects1-parent">
+                                <div class="projects1" onclick=neighbournet()>
+                                    <div class="projects1-image" style="background: url('./assets/neighbournet.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                    <div class="projects1-text">
+                                        <span class="date">Sep 2020 - Jun 2021</span>
+                                        <h2>NeighbourNet</h2>
+                                        <p>Multi-vendor ecommerce platform for local businesses to sell and promote their products</p>
+                                    </div>
+                                    <div class="projects1-code">
+                                        <button class="html">HTML</button>
+                                        <button class="css">CSS</button>
+                                        <button class="js">JS</button>
+                                        <button class="liquid">Liquid</button>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="projects1-parent">
+                                <div class="projects1" onclick=internx()>
+                                    <div class="projects1-image" style="background: url('./assets/internx.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                    <div class="projects1-text">
+                                        <span class="date">Jul 2020 - Sep 2020</span>
+                                        <h2>InternX</h2>
+                                        <p>Web based platform that connects students to internships and positions at employers</p>
+                                    </div>
+                                    <div class="projects1-code">
+                                        <button class="html">HTML</button>
+                                        <button class="css">CSS</button>
+                                        <button class="js">JS</button>
+                                        <button class="php">PHP</button>
+                                    </div>
+                                </div>       
+                        </div>
+                <h3>Web Development</h3>
+                        <div class="projects1-parent">
+                           <div class="projects1" onclick=waterconnect()>
+                                <div class="projects1-image" style="background: url('./assets/waterconnect.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects1-text">
+                                    <span class="date">Jul 2021</span>
+                                    <h2>WaterConnect</h2>
+                                    <p>SHAD Design Challenge info page: water tracking device prototype + app proposal</p>
+                                </div>
+                                <div class="projects1-code">
+                                    <button class="html">HTML</button>
+                                    <button class="html">CSS</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects1-parent">
+                            <div class="projects1" onclick=uccstem()>
+                                <div class="projects1-image" style="background: url('./assets/uccstem.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects1-text">
+                                    <span class="date">Feb 2021</span>
+                                    <h2>UCC STEM</h2>
+                                    <p>Upper Canada College's official STEM website with blogs, resources, and opportunities</p>
+                                </div>
+                                <div class="projects1-code">
+                                    <button class="html">HTML</button>
+                                    <button class="css">CSS</button>
+                                    <button class="js">JS</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects1-parent">
+                            <div class="projects1" onclick=tutoringtown()>
+                                <div class="projects1-image" style="background: url('./assets/tutoringtown.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects1-text">
+                                    <span class="date">Mar 2020</span>
+                                    <h2>Tutoring Town</h2>
+                                    <p>Matching tutors and tutees through personalized metrics + messaging system (disabled)</p>
+                                </div>
+                                <div class="projects1-code">
+                                    <button class="firebase">Firebase</button>
+                                    <button class="js">JS</button>
+                                    <button class="css">CSS</button>
+                                    <button class="html">HTML</button>
+                                </div>
+                            </div>
+                        </div>
+                
+                <h3>Blockchain</h3>
+                        <div class="projects1-parent">
+                           <div class="projects1" onclick=tradingbot()>
+                                <div class="projects1-image" style="background: url('./assets/tradingbot.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects1-text">
+                                    <span class="date">Jul 2021</span>
+                                    <h2>Crypto Trading Bot</h2>
+                                    <p>Node.js application that detects arbitrage on different crypto exchanges and automates trades</p>
+                                </div>
+                                <div class="projects-code">
+                                    <button class="node">Node.js</button>
+                                    <button class="web3">Web3</button>
+                                    <button class="solidity">Solidity</button>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="projects1-parent">
+                           <div class="projects1" onclick=ethtracker()>
+                                <div class="projects1-image" style="background: url('./assets/ethtracker.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects1-text">
+                                    <span class="date">Jun 2021</span>
+                                    <h2>ETH Transaction</h2>
+                                    <p>Track recent transactions on Ethereum blockchain (number, hash, miner block, timestamp)</p>
+                                </div>
+                                <div class="projects1-code">
+                                    <button class="react">React</button>
+                                    <button class="node">Node.js</button>
+                                    <button class="web3">Web3</button>
+                                    <button class="solidity">Solidity</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects1-parent">
+                            <div class="projects1" onclick=cryptotrack()>
+                                <div class="projects1-image" style="background: url('./assets/pricetracker.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects1-text">
+                                    <span class="date">Jun 2021</span>
+                                    <h2>CryptoTrack</h2>
+                                    <p>View prices of popular cryptocurrencies using coinpaprika API</p>
+                                </div>
+                                <div class="projects1-code">
+                                    <button class="react">React</button>
+                                    <button class="node">Node.js</button>
+                                    <button class="web3">Web3</button>
+                                </div>
+                            </div>
+                        </div>
+                
+                <h3>Application</h3>
+                        <div class="projects1-parent">
+                          <div class="projects1" onclick=shyppio()>
+                                <div class="projects1-image" style="background: url('./assets/nopic.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects1-text">
+                                    <span class="date">In development</span>
+                                    <h2>Shyppio</h2>
+                                    <p>Chrome extension that tracks all shipments and parcels from one central place</p>
+                                </div>
+                                <div class="projects1-code">
+                                    <button class="chromeext">Chrome Ext</button>
+                                    <button class="js">JS</button>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="projects1-parent">
+                           <div class="projects1" onclick=kyckd()>
+                                <div class="projects1-image" style="background: url('./assets/kyckd.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects1-text">
+                                    <span class="date">Aug 2021</span>
+                                    <h2>KYCKd App</h2>
+                                    <p>Teen networking app that promotes startups, recruits other teens, and finds opportunities</p>
+                                </div>
+                                <div class="projects1-code">
+                                    <button class="ios">iOS App</button>
+                                    <button class="swift">Swift</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects1-parent">
+                            <div class="projects1" onclick=socialblockr()>
+                                <div class="projects1-image" style="background: url('./assets/socialblockr.png'); border-top-left-radius: 15px; border-top-right-radius: 15px; background-size: cover;"></div>
+                                <div class="projects1-text">
+                                    <span class="date">Jun 2021</span>
+                                    <h2>Social Blockr</h2>
+                                    <p>Chrome extension that blocks all social media websites to eliminate distractions</p>
+                                </div>
+                                <div class="projects1-code">
+                                    <button class="chromeext">Chrome Ext</button>
+                                    <button class="js">JS</button>
+                                </div>
+                            </div>
+                        </div>
+            </div>    
+                
+                
+            <center><button class="button3" onclick=github()> More on Github &nbsp;<i class='fab fa-github'></i></button></center>
+        </div>
+        
+    </section>
+    
+      
+    <script src="script.js"></script>
+  </body>
+</html>
