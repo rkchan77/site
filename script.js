@@ -311,7 +311,7 @@ function menuToggle() {
   }
 
   function tradingbot() {
-      alert("My personal (and highly profitable) trading bot cannot be shown to the public. If you're interested, contact me and I can show you a live demo")
+      alert("My personal trading bot tracks arbitrage on decentralized exchanges and automates trades. If you're interested, contact me and I can show you a live demo")
   }
 
   function ethtracker() {
