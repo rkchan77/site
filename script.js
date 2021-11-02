@@ -223,6 +223,13 @@ window.onbeforeunload = function () {
 
 //end of loading page
 
+var video = document.getElementById("video_background");
+video.addEventListener("canplay", function() {
+  setTimeout(function() {
+    video.play();
+  }, 3000);
+});
+
 
   function submit() {
       const name = document.getElementById('name').value
@@ -278,20 +285,22 @@ function menuToggle() {
   }
 
   function neighbournet() {
-      alert("NeighbourNet was liquidated in June 2021. Thanks for joining us on our journey!")
+      window.open(
+        'neighbournet.html',
+        '_blank'
+      );
   }
 
   function internx() {
-      alert("InternX was liquidated in September 2020. Thanks for joining us on our journey! Our website is still up but it is not completely functional")
       window.open(
-        'https://internx.ca',
+        'internx.html',
         '_blank'
       );
   }
 
   function waterconnect() {
       window.open(
-        'https://rkchan77.github.io/waterconnect/',
+        'https://stemfellowship.org/',
         '_blank'
       );
   }
@@ -311,7 +320,10 @@ function menuToggle() {
   }
 
   function tradingbot() {
-      alert("My personal trading bot tracks arbitrage on decentralized exchanges and automates trades. If you're interested, contact me and I can show you a live demo")
+      window.open(
+        'demo.html',
+        '_blank'
+      );
   }
 
   function ethtracker() {
@@ -333,10 +345,7 @@ function menuToggle() {
   }
 
   function kyckd() {
-      window.open(
-        'https://rkchan77.github.io/kyckd/',
-        '_blank'
-      );
+      alert("Soon to be released on iOS app store. Check back soon")
   }
 
   function socialblockr() {
