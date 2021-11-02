@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="../site/assets/favicon.png"/>
+    <title>Ryan Chan | NeighbourNet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+  </head>
+  <body>
+   
+    <div id="preload"><center><div class="loadingio-spinner-dual-ball-pnr5fad44y" style="margin-top:20%;"><div class="ldio-83gvcj70z93"><div></div><div></div><div></div></div></div><p style="margin-top: 3%; font-size: 18px; color: white; opacity: 0.6;">NeighbourNet was liquidated in June 2021. Thanks for joining us on our journey!</p></center></div>
+    
+    <canvas id="bgCanvas"></canvas>
+    <nav id="navbar">
+        <ul>
+          <a href="index.html" class="logo">
+            <img src="./assets/logo.png" style="width: 100px; height: 50px; margin-top: 16px;">
+          </a>
+          <a href="index.html" class="logo"><h6 id="item" style="color:#fff; margin-top: 24px; margin-left: 10px;">Ryan Chan</h6></a>
+          <li class="home"><a href="index.html">Home</a></li>
+          <li class="work"><a href="projects.html">Projects</a></li>
+          <li class="music"><a href="music.html">Music</a></li>
+          <button class="contactme" style="float: right; right: 5%; margin-top: 15px" onclick=contactme()>Contact me &nbsp;<i class='fas fa-paper-plane'></i></button>
+        </ul>
+    </nav>
+     
+    <nav id="navbar1">
+        <ul>
+          <a href="index.html" class="logo">
+            <img src="./assets/logo.png" style="width: 100px; height: 50px; margin-top: 16px;">
+          </a>
+          <a href="index.html" class="logo"><h6 id="item" style="color:#fff; margin-top: 24px; margin-left: 10px;">Ryan Chan</h6></a>
+     
+              <input type="checkbox" id="active" >
+              <label for="active" class="menu-btn" style="top:1.25%;"><i class="fas fa-bars"></i></label>
+          <div class="wrapper" style="top:-0.8% ">
+             <ul>
+                  <li class="list"><a href="index.html">Home</a></li>
+                  <li class="list"><a href="projects.html">Projects</a></li>
+                  <li class="list"><a href="music.html" style="padding-bottom: 20px;">Music</a></li>
+                  <button class="button0" onclick=contactme()>Contact me &nbsp;<i class='fas fa-paper-plane'></i></button>
+             </ul>
+          </div>
+        </ul>
+    </nav>
+      
+    <section class="container1"> 
+        <div class="card1" style="width: 80%;">
+            <center><h1>NeighbourNet📍</h1></center>
+            <center>
+                <video id="video_background" width="800" height="600" style="margin-top: -70px;" preload="true" muted>
+                  <source src="./assets/neighbournet/animation.mp4" type="video/mp4">
+                </video>
+                <p style="width: 80%; margin-top:-50px;">NeighbourNet is a multivendor e-commerce platform (like eBay) that provides local businesses an end-to-end online sales and marketing platform to promote, sell and ship their products, as well as showcase their backstories, receive customer feedback and even launch donation campaigns. We provide a connective network of small local businesses (‘Owners’) to their local customers (‘Neighbours’) who are looking for an aggregated marketplace to facilitate simple and speedy purchases, all while supporting their local economy.</p>
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/7oDbpqXEC3g"></iframe>
+                <p style="width: 80%; margin-top:10px;">NeighbourNet advertisement recorded in Roncesvalles.</p>
+                <img src="./assets/neighbournet/partners.png" width="700" height="400">
+                <p style="width: 80%;">Over the duration of 9 months, we partnered with over 30 local businesses around Toronto. Some of our partners included: Kid Icarus, Willen and Jools, BSIDE Beauty, Devil's Workshop, Pluto Collectives, and Beadworks. After we closed our website, our partners were transferred to Doordash and to be set up with Doordash Storefront, a commission-free online ordering system powered by Doordash.</p>
+                <div class="row">
+                   <div class="column1">
+                        <img src="./assets/neighbournet/team.png" width="500" height="300">
+                   </div>
+                   <div class="column2">
+                        <img src="./assets/neighbournet/team1.png" width="500" height="300">
+                   </div>
+                </div>
+                <p style="width: 80%;">Our team of 20 (pictured above) worked relentlessly over the pandemic to bring NeighbourNet to life. From working with businesses to ensure their demands were met, to facilitating orders, to continuously improving the frontend website for customers and backend platform for shops to manage products, we were able to accomplish our mission of promoting local businesses during the pandemic through online means.</p>
+            </center>
+        </div>
+    </section>
+    
+      
+    <script src="script.js"></script>
+  </body>
+</html>
